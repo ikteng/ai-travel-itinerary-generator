@@ -1,0 +1,224 @@
+/* === Form Layout === */
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.inline-label {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.inline-label label {
+  white-space: nowrap;
+  font-weight: 500;
+  min-width: 80px;
+}
+
+/* === Country Input === */
+.country-search-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+}
+
+#country {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0078ff;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.search-btn:hover:not(:disabled) {
+  background-color: #005ecc;
+}
+
+.search-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* === Loading Text === */
+.loading-text {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+}
+
+/* === Suggested Cities === */
+.city-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.city-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.city-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  background: #f0f0f0;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.city-btn:hover {
+  background: #e0e0e0;
+}
+
+.city-btn.selected {
+  background: #0078ff;
+  color: white;
+  border-color: #0078ff;
+}
+
+/* === Inline "Other City" Input === */
+.custom-city-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px dashed #bbb;
+  border-radius: 20px;
+  padding: 0.3rem 0.6rem;
+  background: #fafafa;
+}
+
+.custom-city-inline input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 110px;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.custom-city-inline input::placeholder {
+  color: #aaa;
+}
+
+.add-btn {
+  border: none;
+  background: #0078ff;
+  color: white;
+  border-radius: 12px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #005ecc;
+}
+
+/* === Selected Cities === */
+.selected-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.selected-tag {
+  background: #eef;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.remove-btn {
+  border: none;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.remove-btn:hover {
+  color: #000;
+}
+
+/* === Days Input & Submit Button === */
+#days {
+  width: 80px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #0078ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover {
+  background: #005ecc;
+}
+
+/* === Scrollbar styling for selected list === */
+.selected-list::-webkit-scrollbar {
+  height: 6px;
+}
+.selected-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+.selected-list::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
