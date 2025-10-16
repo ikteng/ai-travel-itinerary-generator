@@ -18,36 +18,6 @@ input {
   border-radius: 6px;
 }
 
-/* .title {
-  color: #1e90ff;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-button {
-  padding: 0.6rem;
-  border: none;
-  border-radius: 6px;
-  background-color: #1e90ff;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0073e6;
-}
-
-.loading {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  font-style: italic;
-  text-align: center;
-} */
-
 .error {
   color: red;
   font-weight: bold;
